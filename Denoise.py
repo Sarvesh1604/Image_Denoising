@@ -63,10 +63,5 @@ for i in range(0,img_noised.shape[0]):
     except:
       pass
 
-#Displaying and saving the denoised images
-'''cv2.imshow('ImageWindow', img_mean)
-cv2.waitKey()
-cv2.imshow('ImageWindow', img_median)
-cv2.waitKey()'''
 cv2.imwrite('denoised_mean.jpg', img_mean)
 cv2.imwrite('denoised_median.jpg', img_median)
